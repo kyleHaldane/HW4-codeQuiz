@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+    <title>Code Quiz</title>
+</head>
+<body class = "bg-secondary">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Code Quiz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">High Scores <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>x
+            </li> -->
+          </ul>
+          <span class="navbar-text">
+            timer
+          </span>
+        </div>
+      </nav>
+
+      <!-- intro page -->
+    <div id = "intro" class = "container mt-5 pt-10 shadow p-3 mb-5 bg-white rounded" style ="height: 500px">
+        <div class = "row text-content mt-5">
+            <div class = "col">
+                <div class = "row">
+                    <div class = "col text-center">
+                        <h1>Code Quiz</h1>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col message text-center border-2">
+                        <p>In this quiz we will be testeing your ability to recognize fundamental coding concepts</p>
+                        <p>There will be # questions with # time to answer them. Each wrong answer will deduct # time</p>
+                        <p>Scores are determined by time of completion. The best times will be displayed. </p>
+                        <button type="button" class="btn btn-outline-primary start">Start Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- quiz pages -->
+    <div id = "quiz-page" class = "container d-none">
+        <div class="row">
+            <div id = "question" class = "col">  
+                <h2 id = "question-text"></h2>
+            </div>
+            <div class = "row">
+                <div class = col>
+                    <ol id = "quesion-list" class = ""> 
+                        <li id = "question1"></li>
+                        <li id = "question2"></li>
+                        <li id = "question3"></li>
+                        <li id = "question4"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script type="text/javascript">
+
+
+var questions = [
+    {title: "Data is stored in what?",
+    choices:["booleans", "functions", "variables", "javaScript"],
+    answer: "variables"
+    },
+    {title: "The term for the variables that get passed into a function are",
+    choices:["parameters", "values", "numbers", "strings"],
+    answer:"parameters"
+    },
+    {title:"_____ is used for markup on the internet",
+    choices:["java", "c++", "HTML", "wikipedia"]
+    }
+];
+
+$(".start").on("click", function(){
+    startGame();
+    });
+
+function startGame(){
+
+    //Make game intro screen not visible and questions visible
+    $("#intro").attr("class", "d-none");
+    $("#")
+
+    
+
+}
+
+</script>
+</html>
